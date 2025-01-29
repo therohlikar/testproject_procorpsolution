@@ -14,8 +14,7 @@ database:
 	password:
 
 extensions:
-    api: Apitte\Core\DI\ApiExtension
-	nettrine.orm: Nettrine\ORM\DI\OrmExtension
+	api: Apitte\Core\DI\ApiExtension
 	console: Contributte\Console\DI\ConsoleExtension(%consoleMode%)
 
 api:
