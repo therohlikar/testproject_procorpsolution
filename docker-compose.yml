@@ -28,5 +28,5 @@ services:
         ports:
         - "8081:80"
 
-    volumes:
-        mysqldb:
+volumes:
+    mysqldb:
