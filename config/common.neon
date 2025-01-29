@@ -16,6 +16,7 @@ database:
 extensions:
     api: Apitte\Core\DI\ApiExtension
 	nettrine.orm: Nettrine\ORM\DI\OrmExtension
+	console: Contributte\Console\DI\ConsoleExtension(%consoleMode%)
 
 api:
     debug: %debugMode%
@@ -27,6 +28,12 @@ latte:
 	extensions:
 		- App\Presentation\Accessory\LatteExtension
 
+console:
+	name: Acme Project
+	version: '1.0'
+	catchExceptions: true
+	autoExit: true
+	url: https://example.com
 
 di:
 	export:

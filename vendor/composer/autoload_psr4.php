@@ -42,6 +42,7 @@ return array(
     'Contributte\\Psr7\\' => array($vendorDir . '/contributte/psr7-http-message/src'),
     'Contributte\\OpenApi\\' => array($vendorDir . '/contributte/openapi/src'),
     'Contributte\\Middlewares\\' => array($vendorDir . '/contributte/middlewares/src'),
+    'Contributte\\Console\\' => array($vendorDir . '/contributte/console/src'),
     'App\\' => array($baseDir . '/app'),
     'Apitte\\' => array($vendorDir . '/contributte/apitte/src'),
 );
