@@ -1,0 +1,7 @@
+services:
+    webserver:
+        image: 'dockette/web:php-83'
+        volumes:
+            - '.:/srv'
+        ports:
+            - '8080:80'
