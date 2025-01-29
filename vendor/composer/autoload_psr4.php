@@ -38,7 +38,7 @@ return array(
     'Doctrine\\Common\\Collections\\' => array($vendorDir . '/doctrine/collections/src'),
     'Doctrine\\Common\\Cache\\' => array($vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache'),
     'Doctrine\\Common\\Annotations\\' => array($vendorDir . '/doctrine/annotations/lib/Doctrine/Common/Annotations'),
-    'Doctrine\\Common\\' => array($vendorDir . '/doctrine/event-manager/src', $vendorDir . '/doctrine/common/src'),
+    'Doctrine\\Common\\' => array($vendorDir . '/doctrine/common/src', $vendorDir . '/doctrine/event-manager/src'),
     'Contributte\\Psr7\\' => array($vendorDir . '/contributte/psr7-http-message/src'),
     'Contributte\\OpenApi\\' => array($vendorDir . '/contributte/openapi/src'),
     'Contributte\\Middlewares\\' => array($vendorDir . '/contributte/middlewares/src'),
