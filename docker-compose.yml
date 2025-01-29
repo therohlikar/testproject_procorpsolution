@@ -5,3 +5,28 @@ services:
             - '.:/srv'
         ports:
             - '8080:80'
+    mysql:
+        image: mysql:8.0
+        container_name: mysqldb
+        environment:
+            MYSQL_DATABASE: my_database
+            MYSQL_USER: my_user
+            MYSQL_PASSWORD: my_password
+            MYSQL_ROOT_PASSWORD: root_password
+        ports:
+            - "3306:3306"
+        volumes:
+            - mysqldb:/var/lib/mysql
+
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin:latest
+        depends_on:
+            - mysql
+        environment:
+            PMA_HOST: mysql
+            MYSQL_ROOT_PASSWORD: root_password
+        ports:
+        - "8081:80"
+
+    volumes:
+        mysqldb:
