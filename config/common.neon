@@ -13,6 +13,12 @@ database:
 	user:
 	password:
 
+extensions:
+    api: Apitte\Core\DI\ApiExtension
+
+api:
+    debug: %debugMode%
+    catchException: true
 
 latte:
 	strictTypes: yes
