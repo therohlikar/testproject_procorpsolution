@@ -7,11 +7,8 @@ application:
 		5xx: Error:Error5xx
 	mapping: App\Presentation\*\**Presenter
 
-
-database:
-	dsn: 'sqlite::memory:'
-	user:
-	password:
+includes:
+	- doctrine.neon
 
 extensions:
 	api: Apitte\Core\DI\ApiExtension
