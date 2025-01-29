@@ -1,0 +1,64 @@
+{
+  "name": "contributte/middlewares",
+  "description": "Middleware / Relay / PSR-7 support to Nette Framework",
+  "keywords": [
+    "middleware",
+    "relay",
+    "nette"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/contributte/middlewares",
+  "authors": [
+    {
+      "name": "Milan Felix Sulc",
+      "homepage": "https://f3l1x.io"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "nette/di": "^3.1.8",
+    "contributte/psr7-http-message": "^0.9.0 || ^0.10.0"
+  },
+  "require-dev": {
+    "nette/application": "^3.2.0",
+    "nette/http": "^3.2.3",
+    "contributte/qa": "^0.4",
+    "contributte/tester": "^0.4",
+    "contributte/phpstan": "^0.1",
+    "psr/log": "^2.0|^3.0",
+    "tracy/tracy": "^2.10.5"
+  },
+  "conflict": {
+    "nette/application": "<3.2.0"
+  },
+  "suggest": {
+    "tracy/tracy": "to use TracyMiddleware",
+    "nette/http": "to use NetteMiddlewareExtension & NetteMiddlewareApplication",
+    "nette/application": "to use PresenterMiddleware"
+  },
+  "autoload": {
+    "psr-4": {
+      "Contributte\\Middlewares\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "phpstan/extension-installer": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.13.x-dev"
+    }
+  }
+}

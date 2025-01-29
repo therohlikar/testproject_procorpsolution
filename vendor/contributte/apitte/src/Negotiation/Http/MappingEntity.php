@@ -1,0 +1,40 @@
+<?php declare(strict_types = 1);
+
+namespace Apitte\Negotiation\Http;
+
+use Apitte\Core\Mapping\Response\IResponseEntity;
+
+class MappingEntity extends AbstractEntity
+{
+
+	protected IResponseEntity $entity;
+
+	public function __construct(IResponseEntity $entity)
+	{
+		parent::__construct();
+
+		$this->entity = $entity;
+	}
+
+	/**
+	 * @return static
+	 */
+	public static function from(IResponseEntity $entity): self
+	{
+		return new static($entity);
+	}
+
+	/**
+	 * @return mixed[]
+	 */
+	public function getData(): array
+	{
+		return $this->entity->toResponse();
+	}
+
+	public function getEntity(): IResponseEntity
+	{
+		return $this->entity;
+	}
+
+}

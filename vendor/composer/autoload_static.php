@@ -7,6 +7,7 @@ namespace Composer\Autoload;
 class ComposerStaticInit9c49a418f02ffb235919088891200a26
 {
     public static $files = array (
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'd507e002f7fce7f0c6dbf1f22edcb902' => __DIR__ . '/..' . '/tracy/tracy/src/Tracy/functions.php',
     );
 
@@ -15,9 +16,34 @@ class ComposerStaticInit9c49a418f02ffb235919088891200a26
         array (
             'Symfony\\Thanks\\' => 15,
         ),
+        'P' => 
+        array (
+            'Psr\\Http\\Message\\' => 17,
+            'Psr\\Cache\\' => 10,
+        ),
+        'K' => 
+        array (
+            'Koriym\\Attributes\\' => 18,
+        ),
+        'G' => 
+        array (
+            'GuzzleHttp\\Psr7\\' => 16,
+        ),
+        'D' => 
+        array (
+            'Doctrine\\Common\\Lexer\\' => 22,
+            'Doctrine\\Common\\Annotations\\' => 28,
+        ),
+        'C' => 
+        array (
+            'Contributte\\Psr7\\' => 17,
+            'Contributte\\OpenApi\\' => 20,
+            'Contributte\\Middlewares\\' => 24,
+        ),
         'A' => 
         array (
             'App\\' => 4,
+            'Apitte\\' => 7,
         ),
     );
 
@@ -26,9 +52,50 @@ class ComposerStaticInit9c49a418f02ffb235919088891200a26
         array (
             0 => __DIR__ . '/..' . '/symfony/thanks/src',
         ),
+        'Psr\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+        ),
+        'Psr\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/cache/src',
+        ),
+        'Koriym\\Attributes\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/koriym/attributes/src',
+        ),
+        'GuzzleHttp\\Psr7\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
+        ),
+        'Doctrine\\Common\\Lexer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/lexer/src',
+        ),
+        'Doctrine\\Common\\Annotations\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations',
+        ),
+        'Contributte\\Psr7\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/contributte/psr7-http-message/src',
+        ),
+        'Contributte\\OpenApi\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/contributte/openapi/src',
+        ),
+        'Contributte\\Middlewares\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/contributte/middlewares/src',
+        ),
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
+        ),
+        'Apitte\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/contributte/apitte/src',
         ),
     );
 
