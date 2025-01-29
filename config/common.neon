@@ -1,5 +1,9 @@
 parameters:
-
+	doctrine:
+		host: mysqldb
+		user: my_user
+		password: my_password
+		dbname: my_database
 
 application:
 	errorPresenter:
@@ -25,11 +29,10 @@ latte:
 		- App\Presentation\Accessory\LatteExtension
 
 console:
-	name: Acme Project
+	name: CHANGEME
 	version: '1.0'
 	catchExceptions: true
 	autoExit: true
-	url: https://example.com
 
 di:
 	export:

@@ -1,17 +1,21 @@
 extensions:
-    # Common
-    nettrine.annotations: Nettrine\Annotations\DI\AnnotationsExtension
-    nettrine.cache: Nettrine\Cache\DI\CacheExtension
-    nettrine.migrations: Nettrine\Migrations\DI\MigrationsExtension
-    nettrine.fixtures: Nettrine\Fixtures\DI\FixturesExtension
-    # DBAL
-    nettrine.dbal: Nettrine\DBAL\DI\DbalExtension
-    nettrine.dbal.console: Nettrine\DBAL\DI\DbalConsoleExtension
-    # ORM
-    nettrine.orm: Nettrine\ORM\DI\OrmExtension
+    doctrine.dbal: Nettrine\DBAL\DI\DbalExtension
+    doctrine.dbal.console: Nettrine\DBAL\DI\DbalConsoleExtension
+    doctrine.orm: Nettrine\ORM\DI\OrmExtension
+    doctrine.orm.attributes: Nettrine\ORM\DI\OrmAttributesExtension
     nettrine.orm.cache: Nettrine\ORM\DI\OrmCacheExtension
-    nettrine.orm.console: Nettrine\ORM\DI\OrmConsoleExtension
-    nettrine.orm.annotations: Nettrine\ORM\DI\OrmAnnotationsExtension
+    doctrine.orm.console: Nettrine\ORM\DI\OrmConsoleExtension
+    doctrine.cache: Nettrine\Cache\DI\CacheExtension
+
+nettrine.dbal:
+	debug:
+		panel: %debugMode%
+	connection:
+		driver: pdo_mysql
+		host: %doctrine.host%
+		dbname: %doctrine.dbname%
+		user: %doctrine.user%
+		password: %doctrine.password%
 
 nettrine.orm.attributes:
     mapping:
