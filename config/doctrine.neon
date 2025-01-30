@@ -1,4 +1,5 @@
 extensions:
+    nettrine.annotations: Nettrine\Annotations\DI\AnnotationsExtension
     doctrine.dbal: Nettrine\DBAL\DI\DbalExtension
     doctrine.dbal.console: Nettrine\DBAL\DI\DbalConsoleExtension
     doctrine.orm: Nettrine\ORM\DI\OrmExtension
