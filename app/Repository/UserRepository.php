@@ -1,7 +1,7 @@
 <?php
 namespace App\Repository;
 
-use App\Model\User;
+use App\Model\Database\User;
 use Doctrine\ORM\EntityRepository;
 use Doctrine\ORM\Mapping as ORM;
 

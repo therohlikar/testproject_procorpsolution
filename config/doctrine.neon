@@ -7,6 +7,10 @@ extensions:
     doctrine.orm.console: Nettrine\ORM\DI\OrmConsoleExtension
     doctrine.cache: Nettrine\Cache\DI\CacheExtension
 
+doctrine.orm.attributes:
+    mapping:
+        App\Model\Database: %appDir%/Model/Database
+
 doctrine.dbal:
 	debug:
 		panel: %debugMode%
@@ -16,7 +20,3 @@ doctrine.dbal:
 		dbname: %doctrine.dbname%
 		user: %doctrine.user%
 		password: %doctrine.password%
-
-doctrine.orm.attributes:
-    mapping:
-        App\Model\Database: %appDir%/Model/Database

@@ -22,12 +22,6 @@ api:
     debug: %debugMode%
     catchException: true
 
-latte:
-	strictTypes: yes
-	strictParsing: yes
-	extensions:
-		- App\Presentation\Accessory\LatteExtension
-
 console:
 	name: CHANGEME
 	version: '1.0'

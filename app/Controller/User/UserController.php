@@ -2,16 +2,20 @@
 
 namespace App\Controller\User;
 
+use App\Controller\BaseController;
 use Apitte\Core\Http\ApiRequest;
 use Apitte\Core\Http\ApiResponse;
 use Doctrine\ORM\EntityManagerInterface;
 use Nette\Utils\Json;
-use App\Model\User;
+use App\Model\Database\User;
+
+use Apitte\Core\Annotation\Controller\Method;
+use Apitte\Core\Annotation\Controller\Path;
 
 /**
  * @Path("/users")
  */
-class ProductsController extends BaseController
+class UserController extends BaseController
 {
     public function __construct(private EntityManagerInterface $em){
 
