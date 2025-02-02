@@ -1,5 +1,4 @@
 extensions:
-    nettrine.annotations: Nettrine\Annotations\DI\AnnotationsExtension
     doctrine.dbal: Nettrine\DBAL\DI\DbalExtension
     doctrine.dbal.console: Nettrine\DBAL\DI\DbalConsoleExtension
     doctrine.orm: Nettrine\ORM\DI\OrmExtension
@@ -8,7 +7,7 @@ extensions:
     doctrine.orm.console: Nettrine\ORM\DI\OrmConsoleExtension
     doctrine.cache: Nettrine\Cache\DI\CacheExtension
 
-nettrine.dbal:
+doctrine.dbal:
 	debug:
 		panel: %debugMode%
 	connection:
@@ -18,6 +17,6 @@ nettrine.dbal:
 		user: %doctrine.user%
 		password: %doctrine.password%
 
-nettrine.orm.attributes:
+doctrine.orm.attributes:
     mapping:
         App\Model\Database: %appDir%/Model/Database
