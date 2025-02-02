@@ -1,5 +1,5 @@
 services:
-	- App\Core\RouterFactory::createRouter
+	- App\Controller\User\UserController
 
 
 search:
