@@ -9,7 +9,7 @@ use Nette\Utils\Json;
 use App\Model\User;
 
 /**
- * @Path("/products")
+ * @Path("/users")
  */
 class ProductsController extends BaseController
 {
